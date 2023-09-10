@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true">
 <ion-content>
   <br>
-  <form [formGroup]='formularioIniciar' (ngSubmit)="submitForm()">
+  <form [formGroup]='formularioIniciar' (ngSubmit)="grabarusuario()">
     <ion-input formControlName="nombre"  label="Ingrese nombre" label-placement="floating" fill="solid" placeholder=""></ion-input>
     <ion-input formControlName="contrasena" label="Ingrese contraseña" label-placement="floating" fill="solid" placeholder="" type="password"></ion-input>
 
@@ -17,7 +17,7 @@
     
     <br />
 
-    <ion-button  type="submit" [disabled]="!formularioIniciar.valid">Iniciar sesión</ion-button>
+    <ion-button  type="submit" [disabled]="!formularioIniciar.valid" >Iniciar sesión</ion-button>
     <ion-button (click)="recuperarcontrasena()">Reestablecer contraseña </ion-button> 
     
   </form>
